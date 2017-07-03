@@ -1,3 +1,16 @@
 btn {
   font-size: 14px;
 }
+.description {
+  width: 100%;
+}
+.description .columns-content {
+  width: 58%;
+  margin-right: 2%;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+.description .rulers-img {
+  width: 40%;
+}

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Buttons</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/app.js"></script>
 </head>
@@ -35,7 +36,7 @@
             <li><a href="#">Menus</a></li>
             <li><a href="#">Tabs</a></li>
             <li><a href="#">Text fields</a></li>
-            <li><a href="#">Buttons</a></li>
+            <li><a href="#" class="active">Buttons</a></li>
             <li><a href="#">Links and pagination</a></li>
             <li><a href="#">Tags</a></li>
             <li><a href="#">Progress bars</a></li>
@@ -59,32 +60,34 @@
     </header>
     <section class="content">
         <h1>Buttons</h1>
-        <hr />
-        <div class="columns-content">
-            <p>
-                Buttons initiate specific actions and have predefined styles and sizes.
-
-            </p>
-            <h3>Navigation buttons</h3>
-            <p>
-                Navigation buttons should only be used when appearing independent of a toolbar, or ‘floating’ on the page.
-            </p>
-            <h3>Push buttons</h3>
-            <p>
-                Special buttons should only be used to reinforce positive behavior,
-                or as call-to-action (CTA) buttons guiding users towards a goal conversion.
-
-                Danger buttons should only be used for severe or negative consequences, such as “delete”.
-                They should always be accompanied by an alert popup before proceeding.
-
-                Link buttons should only be used on pop ups and pagination.
-                They should always be right or centre aligned.
-
-                All other variants should be used in the correct hierarchy and style.
-
-            </p>
-            <h3>Always</h3>
-            <p>
+        <div class="description clearfix">
+            <div class="columns-content float-left">
+                <p>
+                    Buttons initiate specific actions and have predefined styles and sizes.
+                </p>
+                <h3>Navigation buttons</h3>
+                <p>
+                    Navigation buttons should only be used when appearing independent of a toolbar,
+                    or ‘floating’ on the page.
+                </p>
+                <h3>Push buttons</h3>
+                <p>
+                    Special buttons should only be used to reinforce positive behavior,
+                    or as call-to-action (CTA) buttons guiding users towards a goal conversion.
+                </p>
+                <p>
+                    Danger buttons should only be used for severe or negative consequences, such as “delete”.
+                    They should always be accompanied by an alert popup before proceeding.
+                </p>
+                <p>
+                    Link buttons should only be used on pop ups and pagination.
+                    They should always be right or centre aligned.
+                </p>
+                <p>
+                    All other variants should be used in the correct hierarchy and style.
+                </p>
+                <h3>Always</h3>
+                <p>
                 <ul>
                     <li>Use verbs in titles</li>
                     <li>Use sentence case for titles</li>
@@ -92,60 +95,76 @@
                     <li>Use simple present tense, for example "Buy now" or "Use test"</li>
                     <li>Use Semi Bold weight, 20px kerning</li>
                 </ul>
-            </p>
-            <h3>Size and application</h3>
-            <p>
-                Push buttons may include a title or an icon. They should never contain an image. They have multiple states with corresponding size, color and type specifications as indicated adjacent.
+                </p>
+                <h3>Size and application</h3>
+                <p>
+                    Push buttons may include a title or an icon. They should never contain an image.
+                    They have multiple states with corresponding size, color and type specifications as
+                    indicated adjacent.
+                </p>
+                <p>
+                    When a button appears as part of a group (2 or more buttons),
+                    the button widths should be equal in size. In all other cases,
+                    specified width, height and gutter requirements must apply.
+                </p>
 
-                When a button appears as part of a group (2 or more buttons), the button widths should be equal in size. In all other cases, specified width, height and gutter requirements must apply.
-            </p>
+            </div>
+            <img src="img/rulers.jpg" alt="rulers" class="rulers-img float-right">
         </div>
-        <img src="img/rulers.jpg" alt="rulers">
 
-        <h2>Push buttons, dark variants</h2>
-        <hr />
+
 
         <nav class="tabs">
             <ul>
-                <li><button onclick="openTab('navigation-buttons')">NAVIGATION BUTTONS</button></li>
-                <li><button onclick="openTab('push-buttons-light')">PUSH BUTTONS LIGHT VARIANTS</button></li>
-                <li><button onclick="openTab('push-buttons-dark')">PUSH BUTTONS DARK VARIANTS</button></li>
+                <li><button onclick="openTab('navigation-buttons')">Navigation buttons</button></li>
+                <li><button onclick="openTab('push-buttons-light')">Push buttons light variants</button></li>
+                <li><button onclick="openTab('push-buttons-dark')">Push buttons dark variants</button></li>
             </ul>
         </nav>
 
         <div class="tabs-content">
             <div id="navigation-buttons" style="display:block" class="tabs-content__element">
-                <h1>Navigation buttons, light variants</h1>
-                <hr />
-
+                <h2>Navigation buttons, light variants</h2>
+                <div class="states">
+                    <span>States</span>
+                </div>
                 <div class="background-white">
 
                 </div>
 
-                <h1>Navigation buttons, dark variants</h1>
-                <hr>
-                
+                <h2>Navigation buttons, dark variants</h2>
+                <div class="states">
+                    <span>States</span>
+                </div>
                 <div class="background-dark">
 
                 </div>
 
 
-                <h1>Navigation buttons, over images</h1>
-                <hr>
-
+                <h2>Navigation buttons, over images</h2>
+                <div class="states">
+                    <span>States</span>
+                </div>
                 <div class="background-img">
 
                 </div>
 
             </div>
             <div id="push-buttons-light" style="display:none" class="tabs-content__element">
+                <h2>Push buttons, light variants</h2>
+                <div class="states">
+                    <span>States</span>
+                </div>
                 <div class="background-white">
 
                 </div>
             </div>
             <div id="push-buttons-dark" style="display:none" class="tabs-content__element">
+                <h2>Push buttons, dark variants</h2>
+                <div class="states">
+                    <span>States</span>
+                </div>
                 <div class="background-dark">
-
                 </div>
             </div>
         </div>
