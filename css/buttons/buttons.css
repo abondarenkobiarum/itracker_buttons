@@ -387,3 +387,19 @@ btn {
 .glass-danger.dark.disabled {
   opacity: 0.3;
 }
+.link-button {
+  color: #00aaff;
+}
+.link-button:hover {
+  color: #00aaff;
+  background-color: #cdf0ff;
+  border-color: #cdf0ff;
+}
+.link-button:active {
+  color: #fff;
+  background-color: #00aaff;
+  border-color: #00aaff;
+}
+.link-button.disabled {
+  opacity: 0.3;
+}
