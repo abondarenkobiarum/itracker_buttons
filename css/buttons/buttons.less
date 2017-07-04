@@ -78,11 +78,7 @@ btn {
   }
   &.dark {
     &.with-icon {
-      &:hover {
-        color: #fff;
-        background-color: #64c800;
-        border-color: #64c800;
-      }
+
     }
   }
 }
@@ -260,6 +256,12 @@ btn {
   }
   &.light {
     color: #64c800;
+    &:hover {
+      color: #fff;
+    }
+    &:active {
+      color: #468700;
+    }
     &.with-icon {
       &:hover {
         color: #fff;
@@ -278,6 +280,9 @@ btn {
   }
   &.dark {
     color: #fff;
+    &:active {
+      color: #468700;
+    }
     &.with-icon {
 
     }
@@ -302,6 +307,12 @@ btn {
   }
   &.light {
     color: #00aaff;
+    &:hover {
+      color: #fff;
+    }
+    &:active {
+      color: #055f8c;
+    }
     &.with-icon {
       &:hover {
         color: #fff;
@@ -313,13 +324,16 @@ btn {
         background-color: #0096e1;
         border-color: #0096e1;
       }
-      &.disabled {
-        opacity: 0.3;
-      }
     }
   }
   &.dark {
     color: #fff;
+    &:hover {
+      color: #fff;
+    }
+    &:active {
+      color: #055f8c;
+    }
     &.with-icon {
 
     }
@@ -432,7 +446,7 @@ btn {
       opacity: 0.3;
     }
     &.with-icon {
-      
+
     }
   }
 }
