@@ -34,27 +34,37 @@
 .icon-graph:before {
   content: "\e965";
 }
-btn {
-  font-size: 14px;
-}
 .description {
   width: 100%;
 }
 .description .columns-content {
-  width: 58%;
+  width: 48%;
+  float: left;
   margin-right: 2%;
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
 }
+@media only screen and (max-width: 1024px) {
+  .description .columns-content {
+    width: 100%;
+  }
+}
 .description .rulers-img {
-  width: 40%;
+  width: 50%;
+  float: right;
+}
+@media only screen and (max-width: 1024px) {
+  .description .rulers-img {
+    width: 100%;
+  }
 }
 .button-line {
   margin-bottom: 40px;
   width: 100%;
 }
 .btn {
+  font-size: 14px;
   background-color: transparent;
   box-shadow: none;
   border: 1px solid transparent;
@@ -80,6 +90,9 @@ btn {
   position: relative;
   top: 1.5px;
 }
+.btn.disabled {
+  opacity: 0.3;
+}
 .special-button {
   color: #fff;
   background-color: #64c800;
@@ -95,9 +108,6 @@ btn {
   background-color: #5fb900;
   border-color: #5fb900;
 }
-.special-button.disabled {
-  opacity: 0.3;
-}
 .special-button.light.with-icon:hover {
   color: #fff;
   background-color: #6ed70a;
@@ -107,9 +117,6 @@ btn {
   color: #468700;
   background-color: #5fb900;
   border-color: #5fb900;
-}
-.special-button.light.with-icon.disabled {
-  opacity: 0.3;
 }
 .primary-button {
   color: #fff;
@@ -126,9 +133,6 @@ btn {
   background-color: #0096e1;
   border-color: #0096e1;
 }
-.primary-button.disabled {
-  opacity: 0.3;
-}
 .primary-button.light.with-icon:hover {
   color: #fff;
   background-color: #46c3ff;
@@ -138,9 +142,6 @@ btn {
   color: #055f8c;
   background-color: #0096e1;
   border-color: #0096e1;
-}
-.primary-button.light.with-icon.disabled {
-  opacity: 0.3;
 }
 .secondary-button.light {
   color: #4b555f;
@@ -156,9 +157,6 @@ btn {
   color: #6e7882;
   background-color: #b9c3cd;
   border-color: #b9c3cd;
-}
-.secondary-button.light.disabled {
-  opacity: 0.3;
 }
 .secondary-button.light.with-icon .icon {
   color: #00aaff;
@@ -178,9 +176,6 @@ btn {
   color: #6e7882;
   background-color: #b9c3cd;
   border-color: #b9c3cd;
-}
-.secondary-button.light.with-icon.disabled {
-  opacity: 0.3;
 }
 .secondary-button.dark {
   color: #fff;
@@ -206,9 +201,6 @@ btn {
   background-color: #4b555f;
   border-color: #4b555f;
 }
-.secondary-button.dark.disabled {
-  opacity: 0.3;
-}
 .danger-button.light {
   color: #fff;
   background-color: #c80000;
@@ -224,9 +216,6 @@ btn {
   background-color: #aa0000;
   border-color: #aa0000;
 }
-.danger-button.light.disabled {
-  opacity: 0.3;
-}
 .danger-button.light.with-icon:hover {
   color: #fff;
   background-color: #f00000;
@@ -236,9 +225,6 @@ btn {
   color: #5a0000;
   background-color: #aa0000;
   border-color: #aa0000;
-}
-.danger-button.light.with-icon.disabled {
-  opacity: 0.3;
 }
 .danger-button.dark {
   color: #fff;
@@ -255,9 +241,6 @@ btn {
   background-color: #aa0000;
   border-color: #aa0000;
 }
-.danger-button.dark.disabled {
-  opacity: 0.3;
-}
 .special-glass {
   background-color: transparent;
   border-color: #64c800;
@@ -271,9 +254,6 @@ btn {
   color: #468700;
   background-color: #5fb900;
   border-color: #5fb900;
-}
-.special-glass.disabled {
-  opacity: 0.3;
 }
 .special-glass.light {
   color: #64c800;
@@ -294,9 +274,6 @@ btn {
   background-color: #5fb900;
   border-color: #5fb900;
 }
-.special-glass.light.with-icon.disabled {
-  opacity: 0.3;
-}
 .special-glass.dark {
   color: #fff;
 }
@@ -316,9 +293,6 @@ btn {
   color: #055f8c;
   background-color: #0096e1;
   border-color: #0096e1;
-}
-.primary-glass.disabled {
-  opacity: 0.3;
 }
 .primary-glass.light {
   color: #00aaff;
@@ -365,9 +339,6 @@ btn {
   background-color: #b9c3cd;
   border-color: #b9c3cd;
 }
-.secondary-glass.light.disabled {
-  opacity: 0.3;
-}
 .secondary-glass.light.with-icon .icon {
   color: #00aaff;
 }
@@ -387,9 +358,6 @@ btn {
   background-color: #b9c3cd;
   border-color: #b9c3cd;
 }
-.secondary-glass.light.with-icon.disabled {
-  opacity: 0.3;
-}
 .secondary-glass.dark {
   color: #fff;
 }
@@ -402,9 +370,6 @@ btn {
   color: #37414b;
   background-color: #4b555f;
   border-color: #4b555f;
-}
-.secondary-glass.dark.disabled {
-  opacity: 0.3;
 }
 .secondary-glass.dark.with-icon .icon {
   color: #00aaff;
@@ -432,9 +397,6 @@ btn {
   background-color: #aa0000;
   border-color: #aa0000;
 }
-.glass-danger.light.disabled {
-  opacity: 0.3;
-}
 .glass-danger.light.with-icon:hover {
   color: #fff;
   background-color: #f00000;
@@ -444,9 +406,6 @@ btn {
   color: #5a0000;
   background-color: #aa0000;
   border-color: #aa0000;
-}
-.glass-danger.light.with-icon.disabled {
-  opacity: 0.3;
 }
 .glass-danger.dark {
   color: #fff;
@@ -462,9 +421,6 @@ btn {
   background-color: #aa0000;
   border-color: #aa0000;
 }
-.glass-danger.dark.disabled {
-  opacity: 0.3;
-}
 .link-button {
   color: #00aaff;
 }
@@ -478,8 +434,64 @@ btn {
   background-color: #00aaff;
   border-color: #00aaff;
 }
-.link-button.disabled {
-  opacity: 0.3;
+.close-btn {
+  width: 36px;
+  height: 36px;
+  color: #00aaff;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0;
+}
+.close-btn .icon {
+  position: relative;
+  top: 1.3px;
+  font-size: 14px;
+}
+.close-btn.large {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+.close-btn.large .icon {
+  position: relative;
+  top: 5px;
+  font-size: 22px;
+}
+.close-btn:hover {
+  color: #00aaff;
+}
+.close-btn:active {
+  color: #0096e1;
+}
+.close-btn.light:hover {
+  background-color: #e1e9f0;
+}
+.close-btn.light:active {
+  color: #0096e1;
+  background-color: #b9c3cd;
+}
+.close-btn.dark:hover {
+  background-color: #4b555f;
+}
+.close-btn.dark:active {
+  color: #0096e1;
+  background-color: #4b555f;
+}
+.close-btn.image-bg {
+  color: #fff;
+  background-color: rgba(35, 45, 55, 0.7);
+}
+.close-btn.image-bg:hover {
+  background-color: rgba(55, 65, 75, 0.7);
+  color: #fff;
+}
+.close-btn.image-bg:active {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+.close-btn.image-bg.disabled {
+  background-color: rgba(35, 45, 55, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 }
 body {
   width: 100%;

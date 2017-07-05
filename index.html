@@ -61,7 +61,7 @@
     <section class="content">
         <h1>Buttons</h1>
         <div class="description clearfix">
-            <div class="columns-content float-left">
+            <div class="columns-content">
                 <p>
                     Buttons initiate specific actions and have predefined styles and sizes.
                 </p>
@@ -107,13 +107,9 @@
                     the button widths should be equal in size. In all other cases,
                     specified width, height and gutter requirements must apply.
                 </p>
-
             </div>
-            <img src="img/rulers.jpg" alt="rulers" class="rulers-img float-right">
+            <img src="img/rulers.jpg" alt="rulers" class="rulers-img">
         </div>
-
-
-
         <nav class="tabs">
             <ul>
                 <li><button onclick="openTab('navigation-buttons')" class="active">Navigation buttons</button></li>
@@ -121,34 +117,29 @@
                 <li><button onclick="openTab('push-buttons-dark')">Push buttons dark variants</button></li>
             </ul>
         </nav>
-
         <div class="tabs-content">
             <div id="navigation-buttons" style="display:block" class="tabs-content__element">
                 <h2>Navigation buttons, light variants</h2>
                 <div class="states text-center">
                     <span>States</span>
                 </div>
-                <div class="background-white">
-
+                <div class="background-white text-center">
+                    <button type="button" class="btn close-btn light"><i class="icon icon-close"></i></button>
                 </div>
-
                 <h2>Navigation buttons, dark variants</h2>
                 <div class="states text-center">
                     <span>States</span>
                 </div>
-                <div class="background-dark">
-
+                <div class="background-dark text-center">
+                    <button type="button" class="btn close-btn dark"><i class="icon icon-close"></i></button>
                 </div>
-
-
                 <h2>Navigation buttons, over images</h2>
                 <div class="states text-center">
                     <span>States</span>
                 </div>
-                <div class="background-img">
-
+                <div class="background-img text-center">
+                    <button type="button" class="btn close-btn image-bg"><i class="icon icon-close"></i></button>
                 </div>
-
             </div>
             <div id="push-buttons-light" style="display:none" class="tabs-content__element">
                 <h2>Push buttons, light variants</h2>
@@ -269,7 +260,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 </body>
 </html>
