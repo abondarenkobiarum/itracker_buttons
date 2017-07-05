@@ -386,6 +386,7 @@
   border-color: #aa0000;
 }
 .link-button {
+  text-transform: uppercase;
   color: #00aaff;
 }
 .link-button:hover {
