@@ -652,6 +652,12 @@ nav.tabs ul li button.active {
   border-color: #00aaff;
   color: #00aaff;
 }
+.tabs-content__element {
+  display: none;
+}
+.tabs-content__element.active {
+  display: inherit;
+}
 .states {
   margin-bottom: 25px;
   width: 100%;

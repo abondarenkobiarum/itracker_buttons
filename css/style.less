@@ -181,6 +181,15 @@ nav.tabs {
   }
 }
 
+.tabs-content {
+  &__element {
+    display: none;
+    &.active{
+      display: inherit;
+    }
+  }
+}
+
 .states {
   margin-bottom: 25px;
   width: 100%;

@@ -112,13 +112,13 @@
         </div>
         <nav class="tabs">
             <ul>
-                <li><button onclick="openTab('navigation-buttons')" class="active">Navigation buttons</button></li>
-                <li><button onclick="openTab('push-buttons-light')">Push buttons light variants</button></li>
-                <li><button onclick="openTab('push-buttons-dark')">Push buttons dark variants</button></li>
+                <li><button class="active" data-tab="navigation-buttons">Navigation buttons</button></li>
+                <li><button data-tab="push-buttons-light">Push buttons light variants</button></li>
+                <li><button data-tab="push-buttons-dark">Push buttons dark variants</button></li>
             </ul>
         </nav>
         <div class="tabs-content">
-            <div id="navigation-buttons" style="display:block" class="tabs-content__element">
+            <div id="navigation-buttons" class="tabs-content__element active">
                 <h2>Navigation buttons, light variants</h2>
                 <div class="states text-center">
                     <span>States</span>
@@ -141,7 +141,7 @@
                     <button type="button" class="btn close-btn image-bg"><i class="icon icon-close"></i></button>
                 </div>
             </div>
-            <div id="push-buttons-light" style="display:none" class="tabs-content__element">
+            <div id="push-buttons-light" class="tabs-content__element">
                 <h2>Push buttons, light variants</h2>
                 <div class="states text-center">
                     <span>States</span>
@@ -200,7 +200,7 @@
                     </div>
                 </div>
             </div>
-            <div id="push-buttons-dark" style="display:none" class="tabs-content__element">
+            <div id="push-buttons-dark" class="tabs-content__element">
                 <h2>Push buttons, dark variants</h2>
                 <div class="states text-center">
                     <span>States</span>
