@@ -1,4 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@font-face {
+  font-family: 'buttons';
+  src: url('../icons/buttons.eot?qrxecy');
+  src: url('../icons/buttons.eot?qrxecy#iefix') format('embedded-opentype'), url('../icons/buttons.ttf?qrxecy') format('truetype'), url('../icons/buttons.woff?qrxecy') format('woff'), url('../icons/buttons.svg?qrxecy#buttons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'buttons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-close:before {
+  content: "\e90a";
+}
+.icon-locked:before {
+  content: "\e913";
+}
+.icon-print:before {
+  content: "\e91a";
+}
+.icon-inflammation:before {
+  content: "\e907";
+}
+.icon-graph:before {
+  content: "\e965";
+}
 btn {
   font-size: 14px;
 }
@@ -38,6 +73,12 @@ btn {
   height: 40px;
   line-height: 38px;
   font-size: 16px;
+}
+.btn.with-icon .icon {
+  padding-right: 5px;
+  font-size: 16px;
+  position: relative;
+  top: 1.5px;
 }
 .special-button {
   color: #fff;
@@ -119,6 +160,15 @@ btn {
 .secondary-button.light.disabled {
   opacity: 0.3;
 }
+.secondary-button.light.with-icon .icon {
+  color: #00aaff;
+}
+.secondary-button.light.with-icon:hover .icon {
+  color: #46c3ff;
+}
+.secondary-button.light.with-icon:active .icon {
+  color: #0096e1;
+}
 .secondary-button.light.with-icon:hover {
   color: #4b555f;
   background-color: #f0f5fa;
@@ -136,6 +186,15 @@ btn {
   color: #fff;
   background-color: #6e7882;
   border-color: #6e7882;
+}
+.secondary-button.dark .icon {
+  color: #00aaff;
+}
+.secondary-button.dark:hover .icon {
+  color: #46c3ff;
+}
+.secondary-button.dark:active .icon {
+  color: #0096e1;
 }
 .secondary-button.dark:hover {
   color: #fff;
@@ -309,6 +368,15 @@ btn {
 .secondary-glass.light.disabled {
   opacity: 0.3;
 }
+.secondary-glass.light.with-icon .icon {
+  color: #00aaff;
+}
+.secondary-glass.light.with-icon:hover .icon {
+  color: #46c3ff;
+}
+.secondary-glass.light.with-icon:active .icon {
+  color: #0096e1;
+}
 .secondary-glass.light.with-icon:hover {
   color: #4b555f;
   background-color: #f0f5fa;
@@ -337,6 +405,15 @@ btn {
 }
 .secondary-glass.dark.disabled {
   opacity: 0.3;
+}
+.secondary-glass.dark.with-icon .icon {
+  color: #00aaff;
+}
+.secondary-glass.dark.with-icon:hover .icon {
+  color: #46c3ff;
+}
+.secondary-glass.dark.with-icon:active .icon {
+  color: #0096e1;
 }
 .glass-danger {
   background-color: transparent;

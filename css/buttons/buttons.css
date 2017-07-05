@@ -38,6 +38,12 @@ btn {
   line-height: 38px;
   font-size: 16px;
 }
+.btn.with-icon .icon {
+  padding-right: 5px;
+  font-size: 16px;
+  position: relative;
+  top: 1.5px;
+}
 .special-button {
   color: #fff;
   background-color: #64c800;
@@ -118,6 +124,15 @@ btn {
 .secondary-button.light.disabled {
   opacity: 0.3;
 }
+.secondary-button.light.with-icon .icon {
+  color: #00aaff;
+}
+.secondary-button.light.with-icon:hover .icon {
+  color: #46c3ff;
+}
+.secondary-button.light.with-icon:active .icon {
+  color: #0096e1;
+}
 .secondary-button.light.with-icon:hover {
   color: #4b555f;
   background-color: #f0f5fa;
@@ -135,6 +150,15 @@ btn {
   color: #fff;
   background-color: #6e7882;
   border-color: #6e7882;
+}
+.secondary-button.dark .icon {
+  color: #00aaff;
+}
+.secondary-button.dark:hover .icon {
+  color: #46c3ff;
+}
+.secondary-button.dark:active .icon {
+  color: #0096e1;
 }
 .secondary-button.dark:hover {
   color: #fff;
@@ -308,6 +332,15 @@ btn {
 .secondary-glass.light.disabled {
   opacity: 0.3;
 }
+.secondary-glass.light.with-icon .icon {
+  color: #00aaff;
+}
+.secondary-glass.light.with-icon:hover .icon {
+  color: #46c3ff;
+}
+.secondary-glass.light.with-icon:active .icon {
+  color: #0096e1;
+}
 .secondary-glass.light.with-icon:hover {
   color: #4b555f;
   background-color: #f0f5fa;
@@ -336,6 +369,15 @@ btn {
 }
 .secondary-glass.dark.disabled {
   opacity: 0.3;
+}
+.secondary-glass.dark.with-icon .icon {
+  color: #00aaff;
+}
+.secondary-glass.dark.with-icon:hover .icon {
+  color: #46c3ff;
+}
+.secondary-glass.dark.with-icon:active .icon {
+  color: #0096e1;
 }
 .glass-danger {
   background-color: transparent;
